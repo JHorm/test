@@ -7,10 +7,8 @@ if($id != null){
 	$resultSet = $conn->query("SELECT * FROM gymdiary.exercise WHERE ID=".$id."");
 		if($resultSet->num_rows != 0){
 			while($rows = $resultSet->fetch_assoc()){
-				$info = $rows['name']+"|"+$rows['url']+"|"+$rows['description'];
+				print_r($rows['name']+"|"+$rows['url']+"|"+$rows['description']);
 				}
-			echo $info;
-			print_r($info);
 		}
 
 		else{
