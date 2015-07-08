@@ -10,7 +10,7 @@ if($id != null){
 				$name = $rows['name'];
 				$url = $rows['url'];
 				$desc = $rows['description'];
-				print_r($name+"|"$url+"|"+$desc);
+				print_r("Crunches|gymdiary.azurewebsites.net/temp1.png|xxxxxxx");
 				}
 		}
 
