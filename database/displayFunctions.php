@@ -10,6 +10,7 @@ if($id != null){
 				$info = $rows['name']+"|"+$rows['url']+"|"+$rows['description'];
 				}
 			echo $info;
+			print_r($info);
 		}
 
 		else{
