@@ -4,7 +4,7 @@ if($id != null){
 	require_once("connection.php");
 	$conn = database();				//Query the database
 	$info = "";
-	$resultSet = $conn->query("SELECT * FROM exercise WHERE ID=".$id."");
+	$resultSet = $conn->query("SELECT * FROM exercise WHERE ID=1");
 		if($resultSet->num_rows != 0){
 			while($rows = $resultSet->fetch_assoc()){
 				print_r($rows);
