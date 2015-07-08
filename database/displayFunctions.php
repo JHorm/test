@@ -4,10 +4,9 @@ if($id != null){
 	require_once("connection.php");
 	$conn = database();				//Query the database
 	$info = "";
-	$resultSet = $conn->query("SELECT * FROM exercise WHERE ID=1");
+	$resultSet = $conn->query("SELECT name, url, description FROM exercise WHERE ID=".$id."");
 		if($resultSet->num_rows != 0){
 			while($rows = $resultSet->fetch_assoc()){
-				print_r($rows);
 				$name = $rows['name'];
 				$url = $rows['url'];
 				$desc = $rows['description'];
